@@ -1,0 +1,39 @@
+Server_group {
+  server0, server1, server2
+}
+
+server0 {
+  conn_a = dbserver1
+  conn_b = dbserver2
+  back_a = commserver1
+  back_b = commserver4
+}
+
+server1 {
+
+}
+
+server2 {
+
+}
+## RESOURCES - COMMON TO ALL ##
+dbserver1 {
+  ip = 10.150.0.11
+  cred_u = dbuser
+  cred_p = dbpass
+ }
+dbserver2 {
+  ip = 10.150.0.12
+  cred_u = dbuser
+  cred_p = dbpass
+}
+dbserver3 {
+  ip = 10.150.0.13
+  cred_u = dbuser
+  cred_p = dbpass
+ }
+dbserver4 {
+  ip = 10.150.0.14
+  cred_u = dbuser
+  cred_p = dbpass
+}
